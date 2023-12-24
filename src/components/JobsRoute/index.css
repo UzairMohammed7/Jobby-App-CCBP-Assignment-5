@@ -1,0 +1,80 @@
+* {
+  font-family: 'Roboto';
+}
+.link {
+  text-decoration: none;
+}
+.job-item-container {
+  list-style-type: none;
+  background-color: #202020;
+  width: 1000px;
+  border-radius: 10px;
+}
+.first-part-container {
+  display: flex;
+  flex-direction: column;
+}
+.company-img-url {
+  height: 70px;
+}
+.img-title-container {
+  display: flex;
+  align-items: center;
+}
+.title-rating-container {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-size: 22px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+}
+.rating-container {
+  display: flex;
+  align-items: center;
+}
+.rating-star {
+  color: #fbbf24;
+  margin-right: 5px;
+}
+.location-package-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.location-job-type-container {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  justify-content: space-between;
+}
+.location-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+.job-type-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.location {
+  margin-left: 5px;
+}
+.emp-type {
+  margin-left: 5px;
+}
+hr {
+  color: #ffffff;
+}
+.second-part-container {
+  padding: 0px;
+}
+.desc-heading {
+  font-size: 25px;
+}
+.desc {
+  font-size: 18px;
+}

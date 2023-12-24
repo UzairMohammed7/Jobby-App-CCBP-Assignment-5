@@ -1,0 +1,121 @@
+* {
+  font-family: 'Roboto';
+}
+.job-item-container {
+  list-style-type: none;
+  background-color: #202020;
+  width: 1000px;
+  margin: 20px;
+  padding: 20px;
+}
+.first-part-container {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+.company-img-url {
+  height: 60px;
+}
+.img-title-container {
+  display: flex;
+  align-items: center;
+}
+.title-head {
+  margin-bottom: 0px;
+  padding-top: 10px;
+  font-size: 20px;
+}
+.title-rating-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  height: 120px;
+}
+.rating-container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.rating-star {
+  margin-top: 0px;
+  background-color: #fbbf24;
+}
+.rating {
+  color: #ffffff;
+}
+.location-package-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.location-job-type-container {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  justify-content: space-between;
+}
+.location-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 5%; */
+  margin-left: 10px;
+}
+.job-type-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hr {
+  color: #ffffff;
+}
+.second-part-container {
+  color: #ffffff;
+}
+.head-and-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.href {
+  color: #ffffff;
+  text-decoration: none;
+}
+.desc-heading {
+  font-size: 25px;
+}
+.desc {
+  font-size: 18px;
+  width: 900px;
+}
+.skills-head {
+  color: #ffffff;
+}
+.skills-list {
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+}
+.skills-list-type {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-right: 80px;
+  margin-bottom: 80px;
+  padding-left: 0px;
+}
+.skill-img {
+  height: 50px;
+}
+.lifeAtCompany-container {
+  display: flex;
+  align-items: center;
+}
+.lifeAtCompany-text {
+  color: #cbd5e1;
+}
+.lifeAtCompany-text {
+  font-size: 18px;
+  padding-right: 30px;
+}
