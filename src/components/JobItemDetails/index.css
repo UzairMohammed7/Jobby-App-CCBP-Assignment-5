@@ -1,12 +1,13 @@
 * {
   font-family: 'Roboto';
 }
-.job-item-container {
+.job-item-detail-container {
   list-style-type: none;
   background-color: #202020;
   width: 1000px;
   margin: 20px;
   padding: 20px;
+  border-radius: 10px;
 }
 .first-part-container {
   display: flex;

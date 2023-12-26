@@ -32,7 +32,7 @@ class JobItemDetails extends Component {
     const {params} = match
     const {id} = params
 
-    this.setState({apiStatus: apiStatusConstants.initial})
+    this.setState({apiStatus: apiStatusConstants.inProgress})
 
     const jwtToken = Cookies.get('jwt_token')
     const JobsDetailsApiUrl = `https://apis.ccbp.in/jobs/${id}`
@@ -67,14 +67,14 @@ class JobItemDetails extends Component {
         }),
       )
       const updatedSimilarJobsData = fetchJobItemData.similar_jobs.map(
-        eachItem => ({
-          companyLogoUrl: eachItem.company_logo_url,
-          employmentType: eachItem.employment_type,
-          jobDescription: eachItem.job_description,
-          id: eachItem.id,
-          location: eachItem.location,
-          rating: eachItem.rating,
-          title: eachItem.title,
+        eachSimilarJobItem => ({
+          companyLogoUrl: eachSimilarJobItem.company_logo_url,
+          employmentType: eachSimilarJobItem.employment_type,
+          jobDescription: eachSimilarJobItem.job_description,
+          id: eachSimilarJobItem.id,
+          location: eachSimilarJobItem.location,
+          rating: eachSimilarJobItem.rating,
+          title: eachSimilarJobItem.title,
         }),
       )
       this.setState({
@@ -108,7 +108,7 @@ class JobItemDetails extends Component {
       } = jobsItemData[0]
       return (
         <>
-          <div className="job-item-container">
+          <div className="job-item-detail-container">
             <div className="first-part-container">
               <div className="img-title-container">
                 <img
@@ -119,7 +119,7 @@ class JobItemDetails extends Component {
                 <div className="title-rating-container">
                   <h1 className="title-head">{title}</h1>
                   <div className="rating-container">
-                    <AiFillStar className="rating-star" />
+                    <AiFillStar className="rating-star" color="#fbbf24" />
                     <p className="rating">{rating}</p>
                   </div>
                 </div>
@@ -152,14 +152,14 @@ class JobItemDetails extends Component {
             </div>
             <h1 className="skills-head">Skills</h1>
             <ul className="skills-list">
-              {skills.map(eachItem => (
-                <li className="skills-list-type" key={eachItem.name}>
+              {skills.map(eachSkill => (
+                <li className="skills-list-type" key={eachSkill.name}>
                   <img
                     className="skill-img"
-                    src={eachItem.imageUrl}
-                    alt={eachItem.name}
+                    src={eachSkill.imageUrl}
+                    alt={eachSkill.name}
                   />
-                  <p>{eachItem.name}</p>
+                  <p>{eachSkill.name}</p>
                 </li>
               ))}
             </ul>
@@ -175,10 +175,10 @@ class JobItemDetails extends Component {
           </div>
           <h1>Similar Jobs</h1>
           <ul>
-            {similarJobsData.map(eachItem => (
+            {similarJobsData.map(eachSimilarItem => (
               <SimilarJobs
-                key={eachItem.id}
-                similarJobsDetails={eachItem}
+                key={eachSimilarItem.id}
+                similarJobsDetails={eachSimilarItem}
                 employmentType={employmentType}
               />
             ))}

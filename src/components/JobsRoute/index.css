@@ -1,5 +1,6 @@
 * {
   font-family: 'Roboto';
+  box-sizing: border-box;
 }
 .link {
   text-decoration: none;
@@ -7,7 +8,9 @@
 .job-item-container {
   list-style-type: none;
   background-color: #202020;
-  width: 1000px;
+  padding: 10px;
+  width: 900px;
+  margin-bottom: 10px;
   border-radius: 10px;
 }
 .first-part-container {
@@ -35,7 +38,7 @@
   align-items: center;
 }
 .rating-star {
-  color: #fbbf24;
+  border: none;
   margin-right: 5px;
 }
 .location-package-container {
@@ -69,12 +72,15 @@
 hr {
   color: #ffffff;
 }
-.second-part-container {
+.second-part-job-container {
   padding: 0px;
 }
 .desc-heading {
   font-size: 25px;
+  color: #ffffff;
 }
-.desc {
+.desc-job {
   font-size: 18px;
+  width: 800px;
+  color: #ffffff;
 }

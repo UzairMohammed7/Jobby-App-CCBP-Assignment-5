@@ -31,7 +31,7 @@ const JobsRoute = props => {
               <div className="title-rating-container">
                 <h1 className="title">{title}</h1>
                 <div className="rating-container">
-                  <AiFillStar className="rating-star" />
+                  <AiFillStar className="rating-star" color="#fbbf24" />
                   <p className="rating">{rating}</p>
                 </div>
               </div>
@@ -53,9 +53,9 @@ const JobsRoute = props => {
             </div>
           </div>
           <hr />
-          <div className="second-part-container">
+          <div className="second-part-job-container">
             <h1 className="desc-heading">Description</h1>
-            <p className="desc">{jobDescription}</p>
+            <p className="desc-job">{jobDescription}</p>
           </div>
         </li>
       </Link>
