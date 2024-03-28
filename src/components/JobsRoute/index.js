@@ -20,7 +20,7 @@ const JobsRoute = props => {
   return (
     <>
       <Link to={`/jobs/${id}`} className="link">
-        <li className="job-item-container">
+        <li className="job-item-container-link">
           <div className="first-part-container">
             <div className="img-title-container">
               <img
@@ -31,18 +31,18 @@ const JobsRoute = props => {
               <div className="title-rating-container">
                 <h1 className="title">{title}</h1>
                 <div className="rating-container">
-                  <AiFillStar className="rating-star" color="#fbbf24" />
+                  <AiFillStar className="rating-star" />
                   <p className="rating">{rating}</p>
                 </div>
               </div>
             </div>
-            <div className="location-package-container">
-              <div className="location-job-type-container">
-                <div className="location-container">
+            <div className="location-package-container-job">
+              <div className="location-job-type-container-job">
+                <div className="location-container-job">
                   <MdLocationOn />
                   <p className="location">{location}</p>
                 </div>
-                <div className="job-type-container">
+                <div className="job-type-container-route">
                   <FaBriefcase />
                   <p className="emp-type">{employmentType}</p>
                 </div>

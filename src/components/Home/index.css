@@ -6,6 +6,7 @@
   background-size: cover;
   min-height: 100vh;
   padding: 40px;
+  width: 100vw;
 }
 .find-job-button {
   background-color: #6366f1;
@@ -26,4 +27,17 @@
   color: #ffffff;
   font-size: 22px;
   width: 500px;
+}
+@media screen and (max-width: 768px) {
+  .home-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/home-sm-bg.png');
+    background-size: cover;
+    height: 100px;
+    width: 100vw;
+  }
+  .desc {
+    font-size: 18px;
+    width: 100px;
+    text-align: left;
+  }
 }

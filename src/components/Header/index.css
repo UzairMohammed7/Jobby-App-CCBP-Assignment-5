@@ -2,6 +2,7 @@
   background-color: #202020;
   margin-top: 0px;
   padding: 1px;
+  width: 100vw;
 }
 .nav-items {
   display: flex;

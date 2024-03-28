@@ -108,7 +108,7 @@ class JobItemDetails extends Component {
       } = jobsItemData[0]
       return (
         <>
-          <div className="job-item-detail-container">
+          <div className="job-item-detail-container-jobItem">
             <div className="first-part-container">
               <div className="img-title-container">
                 <img
@@ -119,18 +119,18 @@ class JobItemDetails extends Component {
                 <div className="title-rating-container">
                   <h1 className="title-head">{title}</h1>
                   <div className="rating-container">
-                    <AiFillStar className="rating-star" color="#fbbf24" />
+                    <AiFillStar className="rating-star" />
                     <p className="rating">{rating}</p>
                   </div>
                 </div>
               </div>
-              <div className="location-package-container">
-                <div className="location-job-type-container">
-                  <div className="location-container">
+              <div className="location-package-container-jobItem">
+                <div className="location-job-type-container-jobItem">
+                  <div className="location-container-jobItem">
                     <MdLocationOn />
                     <p>{location}</p>
                   </div>
-                  <div className="job-type-container">
+                  <div className="job-type-container-jobItem">
                     <FaBriefcase />
                     <p>{employmentType}</p>
                   </div>
@@ -173,8 +173,8 @@ class JobItemDetails extends Component {
               <img src={lifeAtCompany.imageUrl} alt="life at company" />
             </div>
           </div>
-          <h1>Similar Jobs</h1>
-          <ul>
+          <h1 className="sim-jobs-head">Similar Jobs</h1>
+          <ul className="sim-jobs-list">
             {similarJobsData.map(eachSimilarItem => (
               <SimilarJobs
                 key={eachSimilarItem.id}

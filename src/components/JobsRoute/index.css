@@ -5,11 +5,12 @@
 .link {
   text-decoration: none;
 }
-.job-item-container {
+.job-item-container-link {
   list-style-type: none;
   background-color: #202020;
   padding: 10px;
   width: 900px;
+  min-width: 70%;
   margin-bottom: 10px;
   border-radius: 10px;
 }
@@ -41,27 +42,25 @@
   border: none;
   margin-right: 5px;
 }
-.location-package-container {
+.location-package-container-job {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.location-job-type-container {
+.location-job-type-container-job {
   display: flex;
   align-items: center;
-  width: 20%;
-  justify-content: space-between;
 }
-.location-container {
+.location-container-job {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-left: 10px;
 }
-.job-type-container {
+.job-type-container-route {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  width: 500px;
+  margin-left: 10px;
 }
 .location {
   margin-left: 5px;
@@ -83,4 +82,21 @@ hr {
   font-size: 18px;
   width: 800px;
   color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .job-item-container-link {
+    width: 400px;
+  }
+  .job-type-container-route {
+    width: 100px;
+  }
+  .desc-heading {
+    font-size: 20px;
+    color: #ffffff;
+  }
+  .desc-job {
+    font-size: 16px;
+    width: 330px;
+    color: #ffffff;
+  }
 }

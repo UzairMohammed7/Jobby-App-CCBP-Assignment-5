@@ -64,7 +64,7 @@ class LoginRoute extends Component {
           <img
             src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
             alt="website logo"
-            className="logo"
+            className="login-logo"
           />
           <div className="input-container">
             <label htmlFor="username" className="label">
@@ -74,7 +74,7 @@ class LoginRoute extends Component {
               id="username"
               value={username}
               placeholder="Username"
-              className="input"
+              className="input-j"
               type="text"
               onChange={this.onChangeUsername}
             />
@@ -86,7 +86,7 @@ class LoginRoute extends Component {
               id="password"
               value={password}
               placeholder="Password"
-              className="input"
+              className="input-j"
               type="password"
               onChange={this.onChangePassword}
             />

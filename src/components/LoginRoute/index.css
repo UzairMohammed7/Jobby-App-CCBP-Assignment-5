@@ -9,7 +9,7 @@
 }
 .login-card-container {
   background-color: #272727;
-  height: 400px;
+  height: 350px;
   width: 400px;
   border-radius: 8px;
   display: flex;
@@ -18,25 +18,25 @@
   align-items: center;
   padding-bottom: 60px;
 }
-.logo {
-  height: 40px;
+.login-logo {
+  height: 35px;
   width: 120px;
   margin-bottom: 40px;
 }
 .input-container {
   display: flex;
   flex-direction: column;
-  width: 300px;
 }
 .label {
   color: #ffffff;
   font-size: 12px;
   padding-bottom: 5px;
 }
-.input {
+.input-j {
   background-color: transparent;
   color: #7e858e;
   height: 35px;
+  width: 300px;
   border: 1px solid #7e858e;
   border-radius: 4px;
   margin-bottom: 10px;
@@ -50,6 +50,7 @@
   border: none;
   border-radius: 5px;
   height: 32px;
+  width: 300px;
 }
 .error-msg {
   color: #ff0b37;
